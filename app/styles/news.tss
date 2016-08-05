@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor: "#262626",
+	layout: "vertical"
+},
+"Window":{
+	backgroundColor: "#262626",
+	barImage: "images/background_title.png",
+	tintColor:"white",
+},
+"#menuButton":{
+	tintColor: "#FFF"
+},
+"#imageNews":{
+	top: 15
+}

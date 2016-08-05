@@ -1,0 +1,19 @@
+"Window": {
+	backgroundColor: "#262626",
+	barImage: "images/background_title.png"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+},
+"TableView":{
+	backgroundColor: "#333333",
+	zIndex: 999
+}
+

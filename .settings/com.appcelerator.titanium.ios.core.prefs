@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=MuseFrance
+iosLaunchConfigurationAttributes/ATTR_UPLOAD_DEBUG_SYMBOLS=false
+iosLaunchConfigurationAttributes/appid=com.benoitd.fanclubmusefrance
+iosLaunchConfigurationAttributes/certificate=Benoit Deguine (G892R47VU4)
+iosLaunchConfigurationAttributes/keychain=/Users/Benoit/Library/Keychains/login.keychain
+iosLaunchConfigurationAttributes/sdk_version=9.3
+iosLaunchConfigurationAttributes/uuid=2b265f3a-563c-4575-843c-2307f138322a

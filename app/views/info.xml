@@ -1,0 +1,21 @@
+<Alloy>
+	<NavigationWindow>
+		<Window>
+			<TitleControl>
+				<Label color="#FFF" text="Informations" />
+			</TitleControl>
+			<RightNavButton>
+				<Label color="#FFF" id="btnQuit" text="Fermer" />
+			</RightNavButton>
+			<ScrollView showVerticalScrollIndicator="true" class="container">
+				<Label id="title"   >Muse France est une communauté francophone du groupe Muse.</Label>
+				<Label id="description">Retrouvez toute l'actu du groupe, leurs dates de concerts, traductions des paroles,...\nVous pouvez nous rejoindre en cliquant sur les boutons ci-dessous :</Label>
+				<Button id="btnFacebook" icon = "fa-facebook-square" class="btn" height="45" title="Sur Facebook" />
+				<Button id="btnTwitter" icon = "fa-twitter-square"  class="btn" height="45" title="Sur Twitter" />
+				<Button id="btnContactUS" icon="fa-envelope-o" class="btn" height="45" title="Contactez-nous" />
+				<Button id="btnOurWebsite" icon="fa-globe" class="btn" height="45" title="Notre Site" />
+			</ScrollView>
+			<Widget id="fa" src="com.mattmcfarland.fontawesome"/>
+		</Window>
+	</NavigationWindow>
+</Alloy>

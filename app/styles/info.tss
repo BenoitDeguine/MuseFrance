@@ -1,0 +1,63 @@
+"Window": {
+	backgroundColor: "#262626",
+	barImage: "images/background_title.png"
+},
+".container":{
+	backgroundColor: "#262626",
+	layout: "vertical"
+},
+"#description":{
+	tintColor: "#FFF",
+	width: '90%',
+	color: "#FFF",
+	top: 60
+}
+
+"#title":{
+	tintColor: "#FFF",
+	width: '90%',
+	color: "#FFF",
+	textAlign: "center"
+}
+
+"#btnFacebook": {
+	color: "#FFF",
+	width: '90%',
+	backgroundColor: "#4463a3",
+	borderColor: "#4463a3",
+	borderRadius: 7
+}
+
+"#btnTwitter": {
+	color: "#FFF",
+	width: '90%',
+	backgroundColor: "#449ecd",
+	borderColor: "#449ecd",
+	borderRadius: 7
+}
+
+"#btnContactUS": {
+	color: "#FFF",
+	width: '90%',
+	backgroundColor: "#67b45f",
+	borderColor: "#67b45f",
+	borderRadius: 7
+}
+
+"#btnOurWebsite":{
+	color: "#FFF",
+	width: '90%',
+	backgroundColor: "#656a6d",
+	borderColor: "#656a6d",
+	borderRadius: 7
+}
+
+"#btnQuit":{
+	tintColor: "white"
+}
+".btn":{
+	top:10
+}
+"#copyright": {
+	bottom: 10
+}

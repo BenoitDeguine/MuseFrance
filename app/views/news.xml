@@ -1,0 +1,20 @@
+<Alloy>
+	<NavigationWindow>
+		<Window>
+			<TitleControl id="titleControl">
+				<Label color="#FFF" text="News" />
+			</TitleControl>
+			<LeftNavButton>
+				<Label id="menuButton" text="< Retour" color="#FFF" />
+			</LeftNavButton>
+			<RightNavButton>
+				<ImageView image="images/share.png" id="imageShare" width="30" height="30" />
+			</RightNavButton>
+			<ScrollView showVerticalScrollIndicator="true" contentWidth="100%" showHorizontalScrollIndicator="false" class="container">
+				<!-- <Label id="titleNews" right="10" left="10" top="10" color="#FFF" />
+				<ImageView id="imageNews" image="" />-->
+				<WebView id="contenu" height="100%" html="" disableBounce="false" backgroundColor="transparent" />
+			</ScrollView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

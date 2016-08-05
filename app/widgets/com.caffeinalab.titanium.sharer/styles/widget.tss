@@ -1,0 +1,36 @@
+".sharer_Win":{
+	navBarHidden: true,
+	backgroundColor: '#C000'
+},
+".sharer_Title":{
+	top: 40,
+	textid: 'Share',
+	textAlign: 'center',
+	color: '#fff',
+	font:{
+		fontSize: 20
+	}
+},
+".sharer_Hr":{
+	top: 80,
+	height: 1,
+	left: 30,
+	right: 30,
+	backgroundColor: '#9FFF'
+},
+".sharer_Cont":{
+	top: 80,
+	bottom: 100,
+	scrollable: true,
+	backgroundColor: 'transparent',
+	separatorColor: 'transparent',
+},
+".sharer_Close":{
+	color: '#fff',
+	backgroundColor: 'transparent',
+	bottom: 30,
+	image: WPATH('/images/close.png'),
+	font:{
+		fontSize: 30
+	},
+},

@@ -1,0 +1,13 @@
+<Alloy>
+	<NavigationWindow>
+		<Window>
+			<TitleControl>
+				<Label color="#FFF" text="Actualité" />
+			</TitleControl>
+			<RightNavButton>
+				<ImageView data="" id="btnInfo" image="images/info.png"  width="25" height="25" />
+			</RightNavButton>
+			<TableView id="table_actu" separatorColor="transparent"></TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

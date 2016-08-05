@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>com.benoitd.fanclubmusefrance</id>
+  <name>Muse France</name>
+  <version>1.0.0</version>
+  <publisher>benoitdeguine</publisher>
+  <url>http://Muse-france.fr</url>
+  <description>undefined</description>
+  <copyright>2014 by benoitdeguine</copyright>
+  <icon>appicon-60.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <statusbar-style>opaque</statusbar-style>
+  <analytics>false</analytics>
+  <guid>7921fd68-5563-4995-9ccc-3d71546c0ed5</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleLightContent</string>
+        <key>UIViewControllerBasedStatusBarAppearance</key>
+        <false/>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+      <precache/>
+      <splash>
+        <enabled>true</enabled>
+        <inline-css-images>true</inline-css-images>
+      </splash>
+      <theme>default</theme>
+    </mobileweb>
+    <modules>
+      <module platform="iphone" version="1.0">ti.module.share</module>
+      <module platform="iphone" version="1.9.1">ti.admob</module>
+    </modules>
+    <deployment-targets>
+      <target device="android">false</target>
+      <target device="blackberry">false</target>
+      <target device="ipad">false</target>
+      <target device="iphone">true</target>
+      <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>5.0.2.GA</sdk-version>
+    <plugins>
+      <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">57934e444d01129b6327c940</property>
+  </ti:app>
