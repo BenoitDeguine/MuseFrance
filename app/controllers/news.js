@@ -12,7 +12,6 @@ function nl2br(str, is_xhtml) {
 
 function share(myObject) {
 	xhr.onload = function(e) {
-		console.log(JSON.parse(this.responseText));
 	};
 	xhr.open('POST', URL_APPLI + "appli/share/index");
 	xhr.send(myObject);
@@ -51,12 +50,11 @@ function getNews(id) {
 			var img = infoNews.image['url'] + "." + infoNews.image['extension'];
 		}
 
-		console.log(img);
 
 		infoNews.content = infoNews.content.replace(/<a /gi, '<a onClick="Ti.App.fireEvent( \'webViewClick\', { URL: this.href } ); return false;" ');
 		infoNews.content = infoNews.content.replace('src="//', 'src="http://');
 		infoNews.content = infoNews.content.replace('src="//platform.twitter.com/widgets.js', 'src="http://platform.twitter.com/widgets.js');
-		console.log(infoNews.content);
+
 		var html = '<!DOCTYPE html><html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style>html, body {height:100%;max-width:100%;}iframe {max-width:100%} .contenu img{width:100%;height:auto;max-width:100%;}a:link{color:#6A819E;text-decoration:none;}a:visited{color:#6A819E;text-decoration:none;}a:hover{color:#6A819E;text-decoration:none;}a:active{color:#6A819E;text-decoration:none;}</style></head><body>';
 		html = html + '<h1 style="font-size : 18px;color:#FFF;text-align:center;">' + infoNews.title + '</h1><div style="width:100%;margin-bottom:15px;line-height:15px">';
 		html = html + '<img style="display:block;margin-left:auto;margin-right:auto;" src="' + img + '"  width="90%" /></div>';
@@ -149,7 +147,6 @@ var win3 = Titanium.UI.createWindow({
 });
 
 // begin ads
-console.log("adds");
 var ad = Admob.createView({
 	bottom : 0,
 	left : 0,
@@ -162,17 +159,14 @@ var ad = Admob.createView({
 var showAd = false;
 win3.add(ad);
 ad.hide();
-console.log("fin adds");
 
 
 ad.addEventListener('didReceiveAd', function() {
-	console.log('recu');
 	showAd == true;
 	ad.show();
 	win3.bottom = 50;
 });
 ad.addEventListener('didFailToReceiveAd', function() {
-	console.log('fail');
 	showAd == false;
 	win3.bottom = 0;
 });
@@ -205,5 +199,4 @@ Ti.App.addEventListener('webViewClick', function(e) {
 
 webview.addEventListener("load", function(e) {
 	win3.title = webview.evalJS("document.title");
-	//console.log(webview.evalJS("document.body.height"));
 });

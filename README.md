@@ -12,12 +12,13 @@ L'application possède plusieurs fonctionnalités :
 
 ## Vidéo de présentation
 Site : http://www.Muse-France.fr
+
 Facebook : https://www.facebook.com/Muse.france
+
 Twitter : https://twitter.com/MuseActuFrance
 
 ## Vidéo de présentation
 [![Gif demo vidéo](https://j.gifs.com/o2r8lk.gif)](https://youtu.be/AqHCJfi0Aqg)
-
 
 ## Capture d'écrans
 ![Capture d'écran de l'app 1](https://raw.githubusercontent.com/benoitdeguine/MuseFrance/master/img/capture_album.png)

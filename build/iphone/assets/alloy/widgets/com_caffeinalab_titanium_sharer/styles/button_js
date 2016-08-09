@@ -1,1 +1,0 @@
-function WPATH(e){var t=e.lastIndexOf("/"),i=-1===t?"com.caffeinalab.titanium.sharer/"+e:e.substring(0,t)+"/com.caffeinalab.titanium.sharer/"+e.substring(t+1);return i}module.exports=[{isClass:!0,priority:10000.0009,key:"sharer_Button",style:{backgroundColor:"transparent",width:Ti.UI.FILL,height:42,borderRadius:2,left:30,right:30,top:10,font:{fontSize:16}}}];

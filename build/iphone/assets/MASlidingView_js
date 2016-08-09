@@ -1,1 +1,0 @@
-var MASlidingView;MASlidingView=Ti.Android?function(t){var e=require("ti.draggable");t.minLeft=t.minLeft||0,t.maxLeft=t.maxLeft||.8*Ti.Platform.displayCaps.platformWidth,t.axis=t.axis||"x";var i=new e.createView(t);return i}:function(t){return Ti.UI.createView(t)},module.exports=MASlidingView;
