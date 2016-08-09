@@ -1,0 +1,1 @@
+function WPATH(e){var t=e.lastIndexOf("/"),i=-1===t?"nl.fokkezb.loading/"+e:e.substring(0,t)+"/nl.fokkezb.loading/"+e.substring(t+1);return i}module.exports=[{isClass:!0,priority:10000.0008,key:"loadingWindow",style:{backgroundColor:"transparent",backgroundImage:null,opacity:1,navBarHidden:!0,modal:!1,theme:"Theme.AppCompat.Translucent.NoTitleBar"}}];

@@ -42,16 +42,13 @@ var ad = Admob.createView({
 var showAd = false;
 $.actu.add(ad);
 ad.hide();
-console.log("fin adds");
 
 ad.addEventListener('didReceiveAd', function() {
-	console.log('recu');
 	showAd == true;
 	ad.show();
 	$.table_actu.bottom = 50;
 });
 ad.addEventListener('didFailToReceiveAd', function() {
-	console.log('fail');
 	showAd == false;
 	$.table_actu.bottom = 0;
 });
