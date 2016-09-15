@@ -29,7 +29,6 @@ Alloy.Globals.loading.show('Chargement des news...', false);
 showLoading = true;
 
 // begin ads
-console.log("adds");
 var ad = Admob.createView({
 	bottom : 0,
 	left : 0,
@@ -79,17 +78,13 @@ function loadNews(offset, number, type) {
 		mobile : mobile_info.ip
 	};
 	
-	console.log(blogPost);
-
 	if (isNotTheEndOfArticle) {
 		xhr.ontimeout = function() {
 			console.error("The request for " + URL_APPLI + "actu/get" + " timed out.");
 		};
 		xhr.onload = function() {
 			var jsonResult = JSON.parse(this.responseText);
-			console.log(JSON.stringify(jsonResult));
 
-			console.log(JSON.stringify(Admob));
 			var actu = jsonResult.actu;
 			var adsID = jsonResult.ads;
 
@@ -281,7 +276,6 @@ function loadNews(offset, number, type) {
 		};
 		xhr.open("POST", URL_APPLI + "actu/get", true);
 		xhr.send(blogPost);
-		console.log('POST');
 	}
 
 }

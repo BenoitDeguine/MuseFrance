@@ -1,4 +1,0 @@
-// this is a generated file - DO NOT EDIT
-
-TI_ADMOB_OTHER_LDFLAGS=$(inherited) -framework AdSupport -framework AudioToolbox -framework AVFoundation -framework CoreGraphics -framework CoreTelephony -framework MessageUI -framework StoreKit -framework SystemConfiguration
-OTHER_LDFLAGS=$(inherited) $(TI_ADMOB_OTHER_LDFLAGS) 

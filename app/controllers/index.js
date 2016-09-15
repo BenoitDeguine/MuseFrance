@@ -17,13 +17,9 @@ exports.destroy = function() {
 };
 _.extend($, $.__views);
 arguments[0] || {};
-console.log("ID");
-console.log(Ti.App.Properties.getString("user_id"));
-console.log("ID");
+
 if (Ti.App.Properties.getString("user_id") == null || Ti.App.Properties.getString("user_id") == "<null>") {
-	
-	console.log(URL_APPLI + "user/get");
-	var a = Ti.UI.createAnimation({
+		var a = Ti.UI.createAnimation({
 		duration : 2e3,
 		opacity : 1
 	});
@@ -84,7 +80,7 @@ if (Ti.App.Properties.getString("user_id") == null || Ti.App.Properties.getStrin
 		plateforme : "iPhone OS",
 		pseudo : Titanium.Platform.username
 	};
-	console.log(param);
+
 	var xhr = Ti.Network.createHTTPClient({
 		timeout : 5e3
 	});
@@ -92,12 +88,10 @@ if (Ti.App.Properties.getString("user_id") == null || Ti.App.Properties.getStrin
 	};
 	xhr.onload = function() {
 		var jsonResult = JSON.parse(this.responseText);
-		console.log(JSON.stringify(jsonResult));
 		mobile_info.id = jsonResult.id;
 	};
 	xhr.open("POST", URL_APPLI + "user/get", true);
 	xhr.send(param);
-	console.log("POST");
 	next.addEventListener("click", function() {
 		Ti.App.Properties.setString("user_id", mobile_info.id);
 		Alloy.createController("actu").getView().open();
