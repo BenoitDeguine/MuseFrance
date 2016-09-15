@@ -1,0 +1,15 @@
+### AppceleratorTitanium ###
+# Build folder and log file
+build/
+build.log
+
+## Modules
+app/widgets/com.mattmcfarland.fontawesome
+
+## Codekit
+config.codekit
+
+## Others
+.project
+.settings
+.metadata
