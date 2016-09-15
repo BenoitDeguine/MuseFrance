@@ -4,7 +4,7 @@ build/
 build.log
 
 ## Modules
-app/widgets/com.mattmcfarland.fontawesome
+app/widgets
 
 ## Codekit
 config.codekit
@@ -13,3 +13,5 @@ config.codekit
 .project
 .settings
 .metadata
+i18n
+manifest
